@@ -1,8 +1,17 @@
+#timer-wrapper {
+  display: flex;
+  height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+  user-select: none;
+}
+#timer-content {
+  margin: auto;
+}
 #timer {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
   font-size: 5rem;
-  font-family: 'Courier New', Courier, monospace;
+}
+#goaltime {
+  text-align: center;
 }
