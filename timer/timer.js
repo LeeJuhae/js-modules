@@ -1,8 +1,9 @@
-const setFormat = time => {
-  return time < 10 ? '0' + time : time;
+const utils = {
+  setFormat(time) {
+    return time < 10 ? '0' + time : time;
+  }
 };
 
-// const Timer = goalTime => {
 const Timer = function (goalTime) {
   this.goalTime = new Date(goalTime);
   this.countdown = () => {
@@ -17,9 +18,9 @@ const Timer = function (goalTime) {
       let minute = document.getElementById('minute');
       let second = document.getElementById('second');
 
-      hour.innerHTML = setFormat(hours);
-      minute.innerHTML = setFormat(minutes);
-      second.innerHTML = setFormat(seconds);
+      hour.innerHTML = utils.setFormat(hours);
+      minute.innerHTML = utils.setFormat(minutes);
+      second.innerHTML = utils.setFormat(seconds);
     }
   };
 };
