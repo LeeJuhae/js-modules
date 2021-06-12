@@ -8,8 +8,6 @@
   margin: auto;
 }
 #timer {
-  display: flex;
-  justify-content: center;
   font-size: 5rem;
 }
 #goaltime {
