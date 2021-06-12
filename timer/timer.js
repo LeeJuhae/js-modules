@@ -14,9 +14,9 @@ const Timer = function (goalTime) {
       let minute = document.getElementById('minute');
       let second = document.getElementById('second');
 
-      hour.innerHTML = Utils.setFormat(hours);
-      minute.innerHTML = Utils.setFormat(minutes);
-      second.innerHTML = Utils.setFormat(seconds);
+      hour.textContent = Utils.setFormat(hours);
+      minute.textContent = Utils.setFormat(minutes);
+      second.textContent = Utils.setFormat(seconds);
     }
   };
 };
