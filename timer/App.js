@@ -7,7 +7,7 @@ export const Utils = {
 };
 
 const App = () => {
-  const goalTime = '2021, 06, 14, 00:00';
+  const goalTime = '2021, 08, 21, 00:00';
   const timer = new Timer(goalTime);
   timer.countdown(); // 화면 로딩되자마자 시간 나오게 하기 위해 timer.countdown() 호출함.
   setInterval(timer.countdown, 1000);
